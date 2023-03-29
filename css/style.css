@@ -166,7 +166,7 @@ section.veiculos-destaque .container{
 	background:black;
 }
 
-section.veiculos-destaque .line-titulo h2{
+ .line-titulo h2{
 	position: relative;
 	background: white;
 	display: inline-block;
@@ -218,8 +218,11 @@ section.veiculos-destaque .line-titulo h2{
   margin-top: 10px;  
 }
 
+.servicos-descricao{
+	display: flex;
+}
+
 .half1{
-	float: left;
 	width: 50%;
 	text-align: center;
 	padding: 90px 0;
@@ -253,7 +256,6 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 .half2{
-	float: left;
 	width: 50%;
 	padding: 90px 100px;
 	background: #f81c1c;
@@ -266,11 +268,83 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 .half2 .depoimento-single{
-	margin-top: 52px;
+	margin-top: 19px;
 }
 
 .depoimento-single p{
 	font-size: 20px;
+}
+
+.navigation{
+	float: left;
+	width: 100%;
+	max-width: 700px;
+	margin-top: 10px;
+}
+
+.arrows{
+	float: left;
+}
+.navigation img{
+	cursor: pointer;
+	margin: 0 20px;
+}
+
+.nome-depoimento{
+	float: right;
+	color: black;
+	font-size: 23px;
+}
+
+section.contato{
+	padding: 80px 2%;
+}
+
+section.contato form{
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+section.contato .input-wraper{
+	float: left;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+section.contato input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+
+section.contato textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 120px;
+	padding: 8px;
+	resize: none;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+	text-align: center;
+}
+
+section.contato input[type=submit]{
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
 }
 
 @media screen and (max-width: 850px){
@@ -282,6 +356,16 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 @media screen and (max-width: 768px){
+
+	section.servicos-descricao{
+		flex-direction: column;
+	}
+
+
+	.half1,.half2{
+		width: 100%;
+	}
+
 	section.banner{
 		background-size: cover;
 		background-position: 100px center;
