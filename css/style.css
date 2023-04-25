@@ -11,7 +11,7 @@ html,body{
 
 .container{
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1400px;
 	margin:0 auto;
 }
 
@@ -145,14 +145,15 @@ section.veiculos-destaque{
 }
 
 section.veiculos-destaque .container{
-  max-width: 1000px;
-  padding: 40px 0;
+	/*Vamos deixar o padrão que é 1400px*/
+	/*max-width: 1000px;*/
+	padding:40px 0;
 }
 
 
-
 .line-titulo{
-	max-width: 1000px;
+	/*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
+	max-width: 1400px;
 	margin:0 auto;
 	position: relative;
 	text-align: center;
@@ -166,7 +167,8 @@ section.veiculos-destaque .container{
 	background:black;
 }
 
- .line-titulo h2{
+
+.line-titulo h2{
 	position: relative;
 	background: white;
 	display: inline-block;
@@ -178,45 +180,52 @@ section.veiculos-destaque .container{
 }
 
 .vitrine-destaque{
-  float: left;
-  width: 33.3%;
+	float: left;
+	width: 33.3%;
 }
 
 .vitrine-destaque .carro-img{
-  width: 100%;
-  padding-top: 100%;
-  border: 8px solid white;
-  background-size: 100% 100%;
+	width: 100%;
+	padding-top: 100%;
+	border:8px solid white;
+	background-size: 100% 100%;
 }
 
-.vitrine-destaque h2 {
-  padding-left: 8px;
-  color: black;
-  font-size: 20px;
+.vitrine-destaque h2{
+	padding-left: 8px;
+	color: black;
+	font-style: italic;
+	font-size: 20px;
 }
 
-.vitrine-destaque p {
-  padding-top: 8px;
-  padding-left: 8px;
-  color: #353535;
-  font-size: 15px;
+.vitrine-destaque p{
+	padding-top: 8px;
+	padding-left: 8px;
+	color: #353535;
+	font-size: 15px;
+	font-style: italic;
 }
+
 
 .btn1{
-  text-align: center;
-  display: block;
-  line-height: 40px;
-  background-color: rgb(254, 37, 37);
-  text-decoration: none;
-  border-style: groove;
-  color: white;
-  width: 150px;	
+	text-align: center;
+	display: block;
+	line-height: 40px;
+	background-color:#EB2D2D;
+	text-decoration: none;
+	border-bottom: 5px solid #B21E1E;
+	color: white;
+	font-size: 16px;
+	font-style: italic;
+	width: 150px;
 }
 
-.vitrine-destaque a {
-  margin-left: 8px;
-  margin-top: 10px;  
+.vitrine-destaque a{
+	margin-left: 8px;
+	margin-top:10px;
+
 }
+
 
 .servicos-descricao{
 	display: flex;
@@ -224,25 +233,27 @@ section.veiculos-destaque .container{
 
 .half1{
 	width: 50%;
-	text-align: center;
-	padding: 90px 0;
+	text-align: right;
+	padding:90px 0;
 	background: #242424;
 	color: white;
 }
 
 .half1-wraper{
+	padding-right: 20%;
 	text-align: left;
 	display: inline-block;
 }
 
 .half1-wraper h2{
 	font-weight: normal;
+	font-style: italic;
 	font-size: 32px;
 }
 
 .half1-wraper ul{
 	display: inline-block;
-	margin-top: 20px;
+	margin-top:20px;
 }
 
 .half1-wraper li{
@@ -257,58 +268,61 @@ section.veiculos-destaque .container{
 
 .half2{
 	width: 50%;
-	padding: 90px 100px;
-	background: #f81c1c;
+	padding:90px 100px;
+	background:#EB2D2D;
 	color: white;
 }
 
 .half2 h2{
 	font-weight: normal;
+	font-style: italic;
 	font-size: 32px;
 }
 
 .half2 .depoimento-single{
-	margin-top: 19px;
+	margin-top:19px;
 }
 
 .depoimento-single p{
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .navigation{
 	float: left;
 	width: 100%;
 	max-width: 700px;
-	margin-top: 10px;
+	margin-top:30px;
 }
 
 .arrows{
 	float: left;
 }
+
 .navigation img{
 	cursor: pointer;
-	margin: 0 20px;
+	margin:0 20px;
 }
 
 .nome-depoimento{
 	float: right;
-	color: black;
+	color: #252525;
 	font-size: 23px;
 }
 
+
 section.contato{
-	padding: 80px 2%;
+	padding:80px 2%;
 }
 
 section.contato form{
 	max-width: 600px;
-	margin: 50px auto;
+	margin:50px auto;
 }
 
 section.contato .input-wraper{
 	float: left;
-	padding: 10px;
-	margin-top: 15px;
+	padding:10px;
+	margin-top:7px;
 }
 
 section.contato input[type=text]{
@@ -321,9 +335,9 @@ section.contato input[type=text]{
 
 section.contato textarea{
 	width: 100%;
-	border: 1px solid #ccc;
+	border:1px solid #ccc;
 	height: 120px;
-	padding: 8px;
+	padding:8px;
 	resize: none;
 }
 
@@ -347,15 +361,94 @@ section.contato input[type=submit]{
 	width: 50%;
 }
 
-@media screen and (max-width: 850px){
+footer{
+	padding:40px 2%;
+	background: #252525;
+}
+
+footer nav{
+	float: left;
+}
+
+footer nav ul{
+	list-style-type: none;
+}
+
+footer nav ul li{
+	float: left;
+	font-style: italic;
+	padding:0 35px;
+	font-size: 19px;
+}
+
+footer nav ul a{
+	color: white;
+	text-decoration: none;
+}
+
+footer p{
+	float: right;
+	color: white;
+	font-size: 19px;
+	font-style: italic;
+}
+
+section.venda{
+	padding: 90px 0;
+	min-height: 90%;
+}
+
+@media screen and (max-width: 1100px){
+
+	.half1{
+		text-align: center;
+	}
+
+	.half1-wraper{
+		text-align: left;
+		padding-right: 0;
+	}
+
 	.half1-wraper a{
-		 display: block;
-		 margin-left: 0;
-		 margin-top: 15px;
+		display: block;
+		margin-left: 0;
+		margin-top:15px;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+
+	.nome-depoimento{
+	float: left;
+	width: 100%;
+	margin:20px 20px;
 	}
 }
 
 @media screen and (max-width: 768px){
+
+	footer nav{
+		display: none;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+	footer p{
+		float: none;
+	}
+
+	.w50{
+		width: 100%;
+	}
+
+	.nome-depoimento{
+	float: right;
+	width: auto;
+	margin:0px 0px;
+	}
 
 	section.servicos-descricao{
 		flex-direction: column;
@@ -363,6 +456,7 @@ section.contato input[type=submit]{
 
 
 	.half1,.half2{
+		padding:80px 4%;
 		width: 100%;
 	}
 
@@ -398,21 +492,31 @@ section.contato input[type=submit]{
 	width: 270px;
 }
 
+section.veiculos-destaque .line-titulo h2{
+	font-size: 23px;
+}
+
 section.veiculos-destaque .container{
-  max-width: 1000px;
-  padding: 40px 0;
-  text-align: center;
+	max-width: 1000px;
+	padding:40px 0;
+	text-align: center;
 }
 
 .vitrine-destaque{
-  display: inline-block;
-  float: none;
-  width: 80%;
-  margin-top: 20px;
+	display: inline-block;
+	float: none;
+	width: 80%;
+	margin-top:20px;
 }
 
-.vitrine-destaque a {
-  display: inline-block;
+.vitrine-destaque a{
+	display: inline-block;
 }
 
+}
+
+@media screen and (max-width: 480px){
+	.vitrine-destaque{
+		width: 100%;
+	}
 }
